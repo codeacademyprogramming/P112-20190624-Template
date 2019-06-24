@@ -1,0 +1,125 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* General */
+.btn {
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    display: inline-block;
+}
+
+.btn-email {
+    padding: 10px 20px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.input-email {
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    outline: 0;
+}
+
+.form-email {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+}
+.form-email .input-email{
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.3;
+}
+
+.section-main {
+    padding: 100px 0;
+}
+
+
+/* Colors */
+.bg-gray {
+    background-color: #f8f9fa;
+}
+
+/* Header */
+header {
+    
+}
+
+header nav {   
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.brand-logo a {
+    color: #000;
+    font-size: 20px;
+}
+
+header nav .sign-in a {
+    padding: 10px 15px;
+}
+
+
+#section-intro {
+    position: relative;
+    padding: 200px 0; 
+    background-image: url("../img/bg-intro.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#section-intro h1 {
+    color: #fff;
+    font-size: 50px;
+    width: 80%;
+    margin:0 auto 40px;
+}
+
+.features {
+    display: flex;
+}
+
+.features .feature-item {
+    padding: 0 30px;
+}
+
+.features .feature-item:hover i {
+    font-size: 80px;
+}
+.features .feature-item i {
+    font-size: 70px;
+    color: #007bff;
+}
+
+.features .feature-item h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 20px 0 10px;
+}
+.features .feature-item p {
+    font-weight: 300;
+    line-height: 1.8;
+}
