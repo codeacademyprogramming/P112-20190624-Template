@@ -104,6 +104,7 @@ header nav .sign-in a {
 
 .features .feature-item {
     padding: 0 30px;
+    cursor: pointer;
 }
 
 .features .feature-item:hover i {
@@ -122,4 +123,88 @@ header nav .sign-in a {
 .features .feature-item p {
     font-weight: 300;
     line-height: 1.8;
+}
+
+.info-row{
+    display: flex;
+}
+
+.info-item {
+    width: 50%;
+    height: 350px;
+}
+
+.info-content {
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-content h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.info-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.info-image {  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.info-row:nth-child(1) .info-image{
+    background-image: url(../img/gallery1.jpg);
+}
+.info-row:nth-child(2) .info-image{
+    background-image: url(../img/gallery2.jpg);
+}
+.info-row:nth-child(3) .info-image{
+    background-image: url(../img/gallery3.jpg);
+}
+
+
+.info-row:nth-child(even) .info-content {
+    order: 2;
+}
+
+#section-testimonials h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.testimonials {
+    display: flex;
+}
+.testimonials .testimonials-item {
+    flex: 1;
+}
+.testimonials .testimonials-item img {
+   width: 150px;
+   height: 150px;
+   border-radius: 100%;
+   cursor: pointer;
+   transition: all 1s;
+   /* transition-delay: 2s; */
+   transition-timing-function: cubic-bezier(0,1.84,1,-0.71);
+}
+.testimonials .testimonials-item img:hover {
+    width: 200px;
+    height: 200px;
+   box-shadow: 0 5px 5px rgb(175, 171, 171);
+}
+
+
+.testimonials .testimonials-item h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 15px 0;   
+}
+.testimonials .testimonials-item p {
+  font-weight: 300;
 }
